@@ -18,7 +18,8 @@ public class OnTheGround : MonoBehaviour {
 		Debug.Log ("collision");
 		if(c.name == "Road")
 		{
-//			gameObject.GetComponent<Rigidbody>().
+			gameObject.GetComponent<Rigidbody>().useGravity = false;
+			gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);	
 		}
 	}
 }
